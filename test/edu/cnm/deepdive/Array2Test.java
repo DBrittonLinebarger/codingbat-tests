@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
 
 class Array2Test {
 
@@ -50,8 +51,22 @@ class Array2Test {
   int[] run9 = {2, 1};
   int[] run10 = {2, 1, 2, 1};
 
+
+  //@ParameterizedTest
+  //void either24(int [] nums, boolean expected) {
+  //  boolean actual = array.either24(nums);
+  //  if (expected) {
+  //    assertTrue(actual);
+  //
+  //  }else {
+  //    assertFalse(actual);
+  //
+  //  }
+
   @Test
   void either24() {
+
+
 
     assertAll("Test either24",
         () -> assertTrue(array.either24(row1)),
